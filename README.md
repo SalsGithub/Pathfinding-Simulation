@@ -1,3 +1,5 @@
-###Pathfinding simulator###
+## Pathfinding simulator
 
-Simulates the AStar pathfinding algorithm. Blocks can be placed on nodes which are not considered to be a path. Once the search button is pressed, the simulator will display the path from your starting node to the end node.
+1 - Clone this repository
+2 - Open via an IDE or run through command line
+3 - The GUI has a key to explain how to work the simulator, its pretty simple.
