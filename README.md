@@ -1,5 +1,3 @@
 ## Pathfinding simulator
 
-1 - Clone this repository
-2 - Open via an IDE or run through command line
-3 - The GUI has a key to explain how to work the simulator, its pretty simple.
+Clone this repository, run through an IDE or command line, the GUI has a key to explain how to work the simulator, its very simple.
