@@ -1,3 +1,11 @@
-## Pathfinding simulator
+## Background
 
-Clone this repository, run through an IDE or command line, the GUI has a key to explain how to work the simulator, its very simple.
+This project was made with eclipse a long time ago.
+
+## Requirements
+
+Java 6 or above.
+
+## Getting started
+
+Clone the repo, open with your IDE/command line and run Launcher.java.
