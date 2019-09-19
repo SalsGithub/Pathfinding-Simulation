@@ -1,7 +1,5 @@
 package sal.node;
 
-import java.util.Objects;
-
 import sal.map.Location;
 
 /**
@@ -183,15 +181,55 @@ public class Node {
 	
 	@Override
 	public int hashCode() {
-		return Objects.hashCode(this);
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (blocked ? 1231 : 1237);
+		result = prime * result + gCost;
+		result = prime * result + hCost;
+		result = prime * result + ((location == null) ? 0 : location.hashCode());
+		result = prime * result + ((parent == null) ? 0 : parent.hashCode());
+		result = prime * result + (path ? 1231 : 1237);
+		return result;
 	}
 	
 	@Override
 	public boolean equals(Object obj) {
-		if (obj instanceof Node) {
-			Node other = (Node) obj;
-			return other.getLocation().equals(this.getLocation());
+		if (this == obj) {
+			return true;
 		}
-		return false;
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		Node other = (Node) obj;
+		if (blocked != other.blocked) {
+			return false;
+		}
+		if (gCost != other.gCost) {
+			return false;
+		}
+		if (hCost != other.hCost) {
+			return false;
+		}
+		if (location == null) {
+			if (other.location != null) {
+				return false;
+			}
+		} else if (!location.equals(other.location)) {
+			return false;
+		}
+		if (parent == null) {
+			if (other.parent != null) {
+				return false;
+			}
+		} else if (!parent.equals(other.parent)) {
+			return false;
+		}
+		if (path != other.path) {
+			return false;
+		}
+		return true;
 	}
 }
